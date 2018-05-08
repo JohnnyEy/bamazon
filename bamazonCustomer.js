@@ -63,7 +63,7 @@ function productId() {
                     var quantity = answer.productQuantity;
                     //If quantity is less than stock quantity display error message
                     if (quantity > res[0].stock_quantity) {
-                        console.log("Cannot proceed, insufficient quantity!" + res[0].stock_quantity + " items of the product selected");
+                        console.log("Cannot proceed, insufficient quantity! " + res[0].stock_quantity + " items of the product selected");
                         productId();
                     }
                     //Else display the name and price of product chosen
